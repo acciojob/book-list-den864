@@ -37,7 +37,7 @@ btn.addEventListener("click",(event)=>{
 
     const deleteBtn=document.createElement("button");
     deleteBtn.textContent = "❌";
-    deleteBtn.classList.add("delete-btn");
+    deleteBtn.classList.add("delete-btn","delete");
 
     deleteBtn.addEventListener("click",()=>{
         tr.remove();
