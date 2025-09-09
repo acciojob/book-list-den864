@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <h1>MyBookList</h1>
 
+        <form action="">
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author"  required>
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN#</label>
+                <input type="text" name="isbn" id="isbn" required>
+            </div>
+
+            <button class="add-book-btn" id="submit" type="submit">Add Book</button>
+
+        </form>
+
+        <!-- <div class="list-title">
+            <h3 class="col title">Title</h3>
+            <h3 class="col author">Author</h3>
+            <h3 class="col isbn">ISBN</h3>
+            <h3 class="col action"></h3>
+        </div> -->
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="title-table">Title</th>
+                    <th class="author-table">Author</th>
+                    <th class="isbn-table">ISBN#</th>
+                    <th class="action-table"></th>
+                </tr>
+            </thead>
+
+            <tbody id="book-list">
+
+            </tbody>
+
+        </table>
+
+        <div class="book-data">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
-</html>
+</html> 
